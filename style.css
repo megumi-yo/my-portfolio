@@ -1,0 +1,268 @@
+@charset "utf-8";
+
+/*共通部分
+-----------------------------------------------*/
+html{font-size: 100%;
+}
+body{
+  font-family: "Helvetica Neue",Arial,"Hiragino kaku Gothic ProN","hiiragino Sans",Meiryo,sans-serif;
+  line-height:1.7;
+  color: #1e1e1e;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width:100%;
+    max-height:100%;
+}
+
+/*HEADER
+-----------------------------------------------*/
+
+.main-nav{
+  display: flex;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 5px;
+  list-style: none;
+}
+.main-nav li{
+  margin-left: 36px;
+}
+.main-nav a{
+  color: #1e1e1e;
+}
+.main-nav a:hover{
+  color: rgba(0, 70, 221, 0.756);
+}
+.page-header{
+  width:100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8BF9F4;
+  background: cover;
+ }
+
+/* HOME
+-----------------------------------------------*/
+.wrapper{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0% 4%;
+}
+
+.home-content{
+  text-align: left;
+  margin-top: 15%;
+}
+.home-content p{
+  font-size: 1.4rem;
+  margin: 30% 5% 45% 50%;
+  font-style: Noto Sans JP;
+}
+.image-1{
+  width: 15%;
+  height: 15%;
+  margin-left: 80%;
+  margin-top: -15%;
+}
+
+/*見出し*/
+.page-title{
+  font-size: 3rem;
+  font-family: 'Caudex',serif;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.page-title2{
+  font-size: 3rem;
+  font-family: 'Caudex',serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-left: 10%;
+}
+/*大きな背景画像*/
+.big-bg{
+  background-size: cover;
+  background-position: center top;
+}
+#home{
+  background-image:url(../images/175683.png) ;
+    background-color: #fff;
+  background-blend-mode: multiply;
+  min-height: 150vh;
+}
+#home .page-title{
+  text-transform: none;
+}
+
+/* about -----------------------------------------------*/
+.about-title{
+  font-size: 3rem;
+  font-family: 'Caudex',serif;
+  font-weight: normal;
+  margin-left: 20%;
+  margin-top: 3%;
+}
+.name{
+  font-size: 3.5rem;
+  font-family: 'Caudex',serif;
+  font-weight: bold;
+  margin-left: 50%;
+  margin-top: 5%;
+}
+.profile-image{
+  width: 30%;
+  height: 30%;
+  margin-top:2%;
+  border-style: solid;
+  border-width: thin;
+}
+.about-content p{
+  font-size: 1.25rem;
+  font-style: Noto Sans JP;
+  margin-left: 45%;
+  margin-top: 15px;
+  padding-bottom: 5px;
+}
+.about-content h5{
+  font-size: 1.25rem;
+  font-style: Noto Sans JP;
+  margin-left: 45%;
+  margin-top: 15px;
+  padding-bottom: 5px;
+  border-bottom:double 5px rgba(0, 70, 221, 0.756);
+}
+
+/* works -----------------------------------------------*/
+.works-title{
+  font-size: 3rem;
+  font-family: 'Caudex',serif;
+  font-weight: normal;
+  margin-left: 20%;
+  margin-top: 3%;
+}
+.grid{
+  display:grid;
+  gap:26px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns:repeat(auto-fit);
+  margin-top: 6%;
+  margin-bottom: 50px;
+  margin:0 auto;
+  padding:5%;
+
+}
+.item{
+  width: 100%;
+  height: 100%;
+  background-color: #9ff0ee;
+  padding:10px;
+  
+}
+.item p{
+  font-size: 1rem;
+  font-style: Noto Sans JP;
+  margin-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+
+
+
+
+
+/*モバイル版
+-----------------------------------------------*/
+@media(max-width:600px){
+  .page-title{
+    font-size: 26px;
+  }
+  .page-title2{
+    font-size: 26px;
+  }
+
+/*header*/
+  .main-nav{
+  font-size: 1rem;
+  margin-top:10px;
+  }
+  .main-nav li{
+  margin:0 20px;
+  }
+  a{font-size: 16px;
+  }
+
+/*top*/
+.home-content{
+  margin-top: 20%;
+}
+.home-content p{
+  font-size: 0.9rem;
+  margin: 10% 5% 15% 10%;
+}
+.image-1{
+  width: 30%;
+  height: 30%;
+  margin-left: 70%;
+  margin-top: -15%;
+}
+
+/*about*/
+.about-title{
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+}
+.name{
+  font-size: 2rem;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+.profile-image{
+  width: 100%;
+  height: 100%;
+  margin-top:5%;
+}
+.about-content p{
+  font-size: 1rem;
+  margin-left: 10%;
+  margin-top: 15px;
+  padding-bottom: 10px;
+}
+.about-content h5{
+  font-size: 1rem;
+  margin-left: 10%;
+  margin-top: 15px;
+  padding-bottom: 10px;
+  border-bottom:double 5px rgba(0, 70, 221, 0.756);
+}
+/*works*/
+.works-title{
+  font-size: 2rem;
+  margin-left: 10%;
+  margin-top: 3%;
+}
+.grid{
+  display:grid;
+  gap:26px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns:repeat(auto-fit);
+  margin-top: 6%;
+  margin-bottom: 50px;
+  margin:0 auto;
+  padding:5%;}
+  
+  .item p{
+    font-size: 1rem;
+    margin-top: 5px;
+    padding-bottom: 5px;
+  }
+
+
+
+}
