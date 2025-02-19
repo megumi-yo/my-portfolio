@@ -90,7 +90,7 @@ img{
   background-position: center top;
 }
 #home{
-  background-image:url(./images/175683.png) ;
+  background-image:url(images/175683.png) ;
     background-color: #fff;
   background-blend-mode: multiply;
   min-height: 150vh;
