@@ -141,6 +141,9 @@ img{
   padding-bottom: 5px;
   border-bottom:double 5px rgba(0, 70, 221, 0.756);
 }
+.spacer{
+  height:50px;
+}
 
 /* works -----------------------------------------------*/
 .works-title{
